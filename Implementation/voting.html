@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<head>
+    <title>
+        VOTING PAGE
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="edit.png"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  
+
+  function myFunc(name){
+    swal({
+  title: "Are you sure?",
+  text: "Do you want to vote "+name,
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+  flag:false,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Voted Successfully", {
+      icon: "success",
+      
+    },alert("Voted Successfully"),
+    window.location.replace("qwe.html"));
+  } 
+});
+
+}
+  </script>
+
+<link rel="stylesheet" href="./stylesheets/Voting.css">
+</head>
+<body class="b">
+    <div class="typewriter"><h1><center>WELCOME TO VOTING PAGE</center></h1> </div>
+    
+    <marquee class="m">CAST YOUR VOTE!!</marquee>
+<div class="container">
+    <table class="table table-style">
+        <thead>
+        <tr>
+            <th>CANDIDATE NAME</th>
+            <th>ELECTORAL SYMBOL</th>
+            <th>VOTE</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Elden</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('Elden')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td  style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">John</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('John')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Alice</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('Alice')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Bob</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('Bob')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Peter</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('Peter')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Smurfs</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('Smurfs')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Alexander</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc('Alexander')" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        <tr>
+            <td style="color:black; padding:2%;text-align:center;transform:translateY(15%); font-size:35px;font-family: 'Padauk', sans-serif;">Ariana</td>
+            <td><img src="cup.png" style="width: 70%; height: 70%;"></td>
+            <td><CENTER><button type="button" class="btn btn-success" STYLE="padding-top:10px; MARGIN-TOP:15%" ONclick="myFunc(Ariana)" id="btn">VOTE</button></CENTER></td>
+            
+        </tr>
+        
+        <tbody>
+    </table>
+</div>
+          
+       
+</body>

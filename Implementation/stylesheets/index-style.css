@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+:root{
+    --animate-color:#fff;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+ }
+.footer{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.animate-element{
+    will-change: animation;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(-45deg, #ccabdb, #8474a1, #6ec6ca, #08979d);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+.body-cl :focus, input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    font-size: 20px;
+}
+
+  
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.body-cl input{
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.body-cl {
+    color:#fff;
+}
+
+float{ 
+    font-size: 5vw;
+    color:rgb(255, 255, 255);
+    opacity: 70%;
+}
+
+
+
+
+.sub-cl{
+    margin-top:20px;
+    padding-left:0px;
+}
+.body-cl{
+    align-items: center;
+    text-align: center;
+}
+
+#overlay {
+        display: none ;
+        position: fixed; 
+        width: 100%; 
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.9);
+        color:rgb(223, 205, 205);
+        z-index: 2; 
+        cursor: pointer; 
+        display:flex; 
+        justify-items: center;
+        justify-content:center;
+        -webkit-animation: fading .5s ease-in-out;
+        animation: fading .5s ease-in-out;
+
+    }
+  
+.float{
+	position:fixed;
+	width:90px;
+	height:105px;
+	bottom:60px;
+	right:40px;
+    text-align: center;
+    font-size: 12px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50%;
+    padding-top: 10px;
+    text-decoration:none;
+	box-shadow: 2px 2px 3px #999;
+    transition: box-shadow 2s ease,transform ease-in-out,transform ease-in-out,background-color 2s ease;
+} 
+.float:hover p{
+    
+    transition: 2s ease-in-out;
+    transform:rotate(-180deg);
+}  
+
+.float p{
+    margin-top: 37%;
+}
+.float:hover {
+    background-color:rgb(9, 106, 82);
+    text-decoration: none;
+    transition: 2s ease-in-out;
+    transform: rotate(180deg);
+    }
+  
+
+.my-float{
+	margin-top:22px;
+}
+
+
+.row{
+    padding:15px;
+}
+     .column{
+        height: 100vh;
+    } 
+.cand-img{
+   
+    background-image: url(user.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: inherit;
+
+}
+.bg-light{
+    background: rgba(255, 255, 255, 0.85) !important;
+}
+.column p{
+font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
+margin: 10px 0;
+padding: 5px;
+border: 1px solid #999;
+}
+h1{
+    text-shadow: rgba(243, 240, 240, 0.9) 0px 0px 39px;
+    text-align: center;
+}
+
+
+#overlay-header{ 
+    text-align: center;
+}
+
+#cf {
+    position: relative;
+    height:281px;
+    width:450px;
+    display: block;
+    align-items: center;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:auto;
+  }
+  #cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    
+  }
+  #cf img.top:hover {
+    opacity:0;
+  }
+.overlay .overlay-header h1{
+    text-align: center;
+}
+#overlay-body-details{
+    
+    align-items: center;
+    text-align: center;
+}
+
+#overlay-body-details li{ 
+    list-style-type: none;
+}
+
+.btn-class{
+    padding-left: 43em;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes fading {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+

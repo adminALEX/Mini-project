@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="edit.png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function qwe(){
+        sessionStorage.setItem("haveVoted", "true");
+        }
+    </script>
+    <link rel="stylesheet" href="./stylesheets/thank.css">
+</head>
+<body onload="qwe();">
+    <header>
+        <h1>Check out more on WIKI&nbsp;&nbsp;&nbsp;</h1><br>
+    </header>
+    <button style="--content: 'Click Here';" onclick="window.location.replace('https://en.wikipedia.org/wiki/Politics_of_India')">
+        <div class="left"></div>
+        Click Here
+        <div class="right"></div>
+      </button>
+</body>
+</html>
